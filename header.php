@@ -49,7 +49,11 @@ if ( is_single() ){
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon" />
+<?php if(get_option('tang_sinaapp') == '关闭') { ?>
 <script src="<?php bloginfo('template_directory'); ?>/jquery.min.js"></script>
+<?php } else { ?>
+<script src = "http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+<?php  } ?>
 <script src="<?php bloginfo('template_directory'); ?>/theme.js"></script>
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />

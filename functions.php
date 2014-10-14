@@ -504,7 +504,7 @@ $options = array (
 	array("name" => "新浪微博地址",
     "id" => $shortname."_weibo_url",
     "type" => "text",
-    "std" => "http://weibo.com/782622",
+    "std" => "http://weibo.com/337003006",
 	"explain" => "请输入您的新浪微博地址"),
 	array("name" => "是否显示腾讯微博",
     "id" => $shortname."_tqq",
@@ -521,6 +521,12 @@ $options = array (
     "type" => "select",
     "std" => "隐藏",
     "options" => array("隐藏", "显示")
+	),
+	array("name" => "是否启用新浪前端公共库？(新增)",
+    "id" => $shortname."_sinaapp",
+    "type" => "select",
+    "std" => "关闭",
+    "options" => array("关闭", "启用")
 	),
 	array("name" => "版权年份",
 	"id" => $shortname."_years",
@@ -555,7 +561,7 @@ $options = array (
 	"id" => $shortname."_tuijian",
 	"type" => "textarea",
 	"css" => "class='h80px'",
-	"explain" => "添加CNZZ云推荐，在文章中将会显示相关文章，增强用户粘性。<br />详细使用教程请查看：<a href = \"http://www.zouxiuping.com\" target = \"_blank\">小z博客</a>（新增）"
+	"explain" => "添加CNZZ云推荐，在文章页面将会显示推荐文章，增强用户粘性。<br />详细使用教程请查看：<a href = \"http://www.xiaoz.me/archives/4858\" target = \"_blank\">小z博客</a>（新增）"
 	),
 );
 function mytheme_add_admin() {
@@ -600,7 +606,7 @@ function mytheme_admin() {
 <div class="wrap">
 	<h2><b><?php echo $themename; ?>主题设置</b></h2>
     <hr />
-	<div>主题作者：<a href="http://tangjie.me" target="_blank">唐杰</a> ¦ 当前版本：<a href="http://tangjie.me/tangstyle" title="TangStyle V1.0.9" target="_blank">V1.1</a> ¦ 主题介绍、使用帮助及升级请访问：<a href="http://tangjie.me/tangstyle" title="TangStyle" target="_blank">http://tangjie.me/TangStyle</a></div>
+	<div>主题作者：<a href="http://tangjie.me" target="_blank">唐杰</a> ¦ 当前版本：<a href="http://www.xiaoz.me/archives/4856" title="TangStyle_Optimization1.1" target="_blank">1.1</a> ¦ 主题介绍、使用帮助及升级请访问：<a href="http://www.xiaoz.me/archives/4856" title="TangStyle优化版" target="_blank">http://www.xiaoz.me/archives/4856</a></div>
 <form method="post">
 <div class="options">
 <?php foreach ($options as $value) {
