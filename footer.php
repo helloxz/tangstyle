@@ -20,9 +20,9 @@
 	&copy; <?php echo get_option('tang_years'); ?> <?php bloginfo('name'); ?>.
 	Powered by WordPress.
     Theme by <a href="http://tangjie.me/tangstyle" title="TangStyle" target="_blank">TangStyle</a>.
+	由<a href = "http://www.xiaoz.me/" title = "wordpress教程" target = "_blank">小z博客</a>优化.
     <?php echo stripslashes(get_option('tang_icp')); ?>
     <?php echo stripslashes(get_option('tang_tongji')); ?>
-	由<a href = "http://www.xiaoz.me/" title = "wordpress教程" target = "_blank">小z博客</a>优化.
 </div>
 <?php wp_footer(); ?>
 </body>
